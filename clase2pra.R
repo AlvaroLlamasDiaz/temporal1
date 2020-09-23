@@ -1,13 +1,14 @@
+#Uniamente voy a modificar algunas variables de estudio para observar el comportamiento y de momento conocer y entender el funcionamiento de la plataforma GitHub
 # Objetivo de la clase de hoy: Clonar un proyecto, hacer fork, y realizar cambios.
 
 # Determinar una distribucion de la verdadera poblacion
 rm(list=ls())
-x1 <- rnorm(10000, 4,3) 
+x1 <- rnorm(10000, 7,5) 
 plot(density(x1))
 
 plot(ecdf(x1))
 
-x2 <- rgamma(10000,2,1.5)
+x2 <- rgamma(10000,4,2.5)
 
 plot(density(x2))
 plot(ecdf(x2))
@@ -25,9 +26,9 @@ plot(density(s))
 library(MASS)
 rm(list=ls())
 
-Sigma <- matrix(c(10,3,3,2),2,2)
+Sigma <- matrix(c(14,5,3,2),1,2)
 
-X <- mvrnorm(n=1000, c(4,6), Sigma)
+X <- mvrnorm(n=1000, c(7,3), Sigma)
 plot(X[,1],X[,2])
 
 # modelo,(como modelador de los datos, conoces epsilon)
